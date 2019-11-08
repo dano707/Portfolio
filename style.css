@@ -1,0 +1,346 @@
+.container{
+  display: grid;
+  grid-gap: 5px;
+}
+
+.menu{
+  background-color: purple;
+  grid-area: navbar-left;
+}
+.cta{
+  background-color: green;
+  grid-area: navbar-right;
+  text-align: right;
+
+}
+.headshot{
+  grid-area: photo-left;
+  background: red
+}
+.headshot img{
+  border-radius: 50%;
+}
+.title-text{
+  grid-area: title-text;
+}
+
+.project-image-1, .project-image-2, .project-image-3{
+
+}
+
+.project-info-1, .project-info-2, .project-info-3{
+background-color: grey;
+}
+
+.project-image-1{
+  grid-area: project-image-1;
+}
+.project-image-2{
+  grid-area: project-image-2;
+}
+.project-image-3{
+  grid-area: project-image-3;
+}
+
+.project-info-1{
+  grid-area: project-info-1;
+}
+.project-info-2{
+  grid-area: project-info-2;
+}
+.project-info-3{
+  grid-area: project-info-3;
+}
+
+
+
+#experience-title{
+  color: green;
+  grid-area: experience-title;
+  background-color: grey;
+  margin: 0;
+}
+
+#experience-list{
+  color: blue;
+  background-color: grey;
+  grid-area: experience-list;
+  margin-top: 0;
+
+}
+.divider{
+  grid-area: divider;
+  border: 1px solid black;
+}
+
+.social-icon{
+  grid-area: social-icons;
+  background-color: blue;
+}
+
+.cta-bottom{
+  grid-area: cta-bottom;
+  text-align: center;
+  border: 1px solid black;
+  justify-self: center;
+  border-radius: 50px;
+}
+.icons{
+  grid-area: icons;
+  justify-self: center;
+
+  }
+
+
+
+
+
+  .project-image img{
+    width: 100%;
+
+  }
+
+  .title-text{
+    font-size: 20px;
+    background-color: blue;
+    text-align: left;
+
+  }
+  .title-text h2{
+    margin: 0;
+    padding: 0;
+
+  }
+  .title-text h3{
+    font-size: 15pt;
+
+  }
+
+  #sub-text{
+    font-size: 15pt;
+  }
+
+
+   .project-info{
+     grid-area: project-info;
+     background-color: grey;
+  }
+
+  .cta-bottom{
+    border: 1px solid black;
+    width: 125px;
+    line-height: 30px;
+    height: 30px;
+    border-radius: 50px;
+  }
+
+  .social-icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+  }
+
+  .cta-bottom{
+  margin: 40px 0;
+  }
+  .social-icon{
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+
+
+
+  /* ----------------- */
+  /* ----------------- */
+  /* ----------------- */
+  /* BEGIN MEDIA QUERY */
+  /* ----------------- */
+  /* ----------------- */
+  /* ----------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "navbar-left navbar-right navbar-right navbar-right"
+    "photo-left title-text title-text title-text "
+    "project-image-1 project-image-1 project-image-1 project-image-1"
+    "project-info-1 project-info-1 project-info-1 project-info-1 "
+
+    "project-image-2 project-image-2 project-image-2 project-image-2 "
+    "project-info-2 project-info-2 project-info-2 project-info-2"
+
+    "project-image-3 project-image-3 project-image-3 project-image-3 "
+    "project-info-3 project-info-3 project-info-3 project-info-3"
+    "experience-title experience-title experience-title experience-title"
+    "experience-list experience-list experience-list experience-list"
+    "divider divider divider divider"
+    "cta-bottom cta-bottom cta-bottom cta-bottom"
+    "icons icons icons icons"
+    ;
+  }
+
+  .project-image-1 img, .project-image-2 img, .project-image-3 img {
+    max-width: 338px;
+    width: 100%;
+  }
+
+  .project-image-1, .project-image-2, .project-image-3{
+    justify-self: center;
+  }
+
+  .headshot img{
+    height: 75px;
+    width: 75px;
+  }
+
+  body{
+    background-color: cyan;
+  }
+
+
+a
+}
+
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 1200px){
+  .container{
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    "navbar-left navbar-right navbar-right navbar-right navbar-right"
+
+    "photo-left title-text title-text title-text title-text"
+
+    "project-image-1 project-info-1 project-info-1 project-info-1 project-info-1"
+    "project-image-1 project-info-1 project-info-1 project-info-1 project-info-1"
+    "project-image-1 project-info-1 project-info-1 project-info-1 project-info-1"
+    "project-image-1 project-info-1 project-info-1 project-info-1 project-info-1"
+    "project-image-1 project-info-1 project-info-1 project-info-1 project-info-1"
+
+    "project-image-2 project-info-2 project-info-2 project-info-2 project-info-2"
+    "project-image-2 project-info-2 project-info-2 project-info-2 project-info-2"
+    "project-image-2 project-info-2 project-info-2 project-info-2 project-info-2"
+    "project-image-2 project-info-2 project-info-2 project-info-2 project-info-2"
+    "project-image-2 project-info-2 project-info-2 project-info-2 project-info-2"
+
+    "project-image-3 project-info-3 project-info-3 project-info-3 project-info-3"
+    "project-image-3 project-info-3 project-info-3 project-info-3 project-info-3"
+    "project-image-3 project-info-3 project-info-3 project-info-3 project-info-3"
+    "project-image-3 project-info-3 project-info-3 project-info-3 project-info-3"
+    "project-image-3 project-info-3 project-info-3 project-info-3 project-info-3"
+
+    "experience-title . . . ."
+    "experience-list . . . ."
+
+    "divider divider divider divider divider"
+
+    "cta-bottom cta-bottom cta-bottom cta-bottom cta-bottom"
+
+    "icons icons icons icons icons "
+
+
+    ;
+
+
+
+
+    " */
+  }
+  ul{
+    column-count: 2;
+
+  }
+  li{
+
+  }
+  .project-image-1 img, .project-image-2 img, .project-image-3 img {
+    max-width: 338px;
+  }
+
+  .project-image-1, .project-image-2, .project-image-3{
+    /* justify-self: center; */
+
+  }
+
+  .project-image-1 img{
+
+
+  }
+  .project-info-1, .project-info-2, .project-info-3{
+    align-self: center;
+  }
+
+
+
+  body{
+    background-color: silver;
+  }
+
+
+}
+
+
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+/* ----------------- */
+
+
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container{
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "navbar-left navbar-right navbar-right"
+
+  "photo-left title-text title-text"
+
+  "project-image-1 project-image-2 project-image-3"
+  "project-info-1 project-info-2 project-info-3"
+
+  "experience-title  . ."
+  "experience-list  . ."
+
+  "divider divider divider"
+
+  " cta-bottom cta-bottom cta-bottom"
+
+  "icons icons icons "
+
+  ;
+
+  }
+  .project-image-1 img, .project-image-2 img, .project-image-3 img {
+    max-width: 338px;
+
+}
+.project-image-1 , .project-image-2 , .project-image-3  {
+  margin: 0 auto;
+}
+.project-info-1, .project-info-2, .project-info-3{
+  max-width: 338px;
+  margin: 0 auto;
+}
+
+
+
+
+  body{
+    background-color: pink;
+
+}

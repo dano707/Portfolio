@@ -1,9 +1,53 @@
+@keyframes header-animation {
+  0%{
+    opacity: 0;
+    translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+
+  }
+
+  100%{
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+}
+  @keyframes sub-head-animation {
+    0%{
+      opacity: 0;
+      translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+    100%{
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  @keyframes animation-container {
+    0%{
+      top: 20px;
+    }
+    100%{
+      top: 0;
+
+    }
+
+  }
+
+
+
+
 body{
-  background-color: black;
+  background-color: #1E2022;
 }
 #header{
   margin-bottom: 80px;
   margin-top: 80px;
+  /* animation-name: animation-container;
+  animation-duration: 1s; */
+
 }
 .display-8{
   margin-top: 100px;
@@ -11,19 +55,45 @@ body{
 }
 
 
+
 img#headshot{
   width: 100%;
   min-width: 300px;
 }
 .navbar{
-  background-color: black !important;
+  background-color: #1E2022 !important;
 }
 
-.col-sm-8{
+.display-8{
   color: white;
   margin: 0;
   padding: 0;
+  animation-name: header-animation;
+  animation-duration: 1s
+
 }
+
+.lead{
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  vertical-align: middle;
+  line-height: 10px;
+  animation-name: sub-head-animation;
+  animation-duration: 1s;
+  /* animation-delay: 1s; */
+
+
+
+}
+
+
+
+
+
+
+
 
 .card{
   max-width: 100%;

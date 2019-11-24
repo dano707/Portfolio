@@ -1,3 +1,32 @@
+span.hamburger-inner:before,span.hamburger-inner:after,span.hamburger-inner{
+  background-color: #28C00C !important;
+
+}
+
+#burger{
+  text-align: right;
+}
+
+
+.navigation-bar{
+  width: 100%;
+  min-height: 50px;
+  background-color: #1E2022;
+}
+
+.navigation-bar-items{
+  display: none;
+
+}
+.navigation-bar-items li{
+  margin-bottom: 30px;
+  color: white;
+  list-style: none;
+  margin-right: 15px;
+}
+/* END TEST NAVBAR */
+
+
 @keyframes header-animation {
   0%{
     opacity: 0;
@@ -52,6 +81,7 @@ body{
 .display-8{
   margin-top: 100px;
   text-align: center;
+
 }
 
 
@@ -82,7 +112,9 @@ img#headshot{
   line-height: 10px;
   animation-name: sub-head-animation;
   animation-duration: 1s;
-  /* animation-delay: 1s; */
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 
 
 
@@ -116,7 +148,7 @@ button.btn.btn-primary{
     margin: 0 auto;
 }
 .btn{
-    background-color: black !important;
+    background-color: #1E2022 !important;
     border: 1px solid #28C00C !important;
 }
 
@@ -126,7 +158,7 @@ button.btn.btn-primary{
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  background-color: black;
+  background-color: #1E2022;
   /* color: #28C00C; */
   color: white;
 }
@@ -167,3 +199,37 @@ button.btn.btn-primary{
 #space{
   height: 500px;
 }
+
+#cta-header{
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 30px 0;
+}
+#modal-button{
+  margin: 0 auto;
+  border: 1px solid #28C00C !important;
+  background-color: white !important;
+  color: #28C00C;
+
+}
+#modal-button:hover{
+  margin: 0 auto;
+  background-color: #28C00C !important;
+  color: white;
+}
+
+
+/* .modal{
+  max-height: 500px;
+  max-width: 500px;
+  height: 500px;
+  width: 500px;
+  border: 1px solid white;
+  background-color: white;
+  margin: 0 auto;
+  color: white;
+  display: block;
+  position: inherit;
+} */

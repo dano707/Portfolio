@@ -1,5 +1,11 @@
+body{
+  background: rgb(0,0,0);
+  background: linear-gradient(156deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(46,46,46,1) 100%);
+}
+
 span.hamburger-inner:before,span.hamburger-inner:after,span.hamburger-inner{
-  background-color: #28C00C !important;
+  background-color: white !important;
+
 
 }
 
@@ -9,22 +15,31 @@ span.hamburger-inner:before,span.hamburger-inner:after,span.hamburger-inner{
 
 
 .navigation-bar{
-  width: 100%;
-  min-height: 50px;
-  background-color: #1E2022;
-}
+  width: inherit;
+  /* background-color: #1E2022; */
 
-.navigation-bar-items{
-  display: none;
 
 }
+
+
 .navigation-bar-items li{
   margin-bottom: 30px;
   color: white;
   list-style: none;
   margin-right: 15px;
+
 }
-/* END TEST NAVBAR */
+
+.navigation-bar-items li a:link,.navigation-bar-items li a:visited{
+  color: white;
+
+}
+
+.navigation-bar-items li a:hover{
+  color: #28C00C;
+  text-decoration: none;
+}
+
 
 
 @keyframes header-animation {
@@ -69,7 +84,7 @@ span.hamburger-inner:before,span.hamburger-inner:after,span.hamburger-inner{
 
 
 body{
-  background-color: #1E2022;
+  background-color: #18191A;
 }
 #header{
   margin-bottom: 80px;
@@ -77,12 +92,23 @@ body{
   /* animation-name: animation-container;
   animation-duration: 1s; */
 
+
 }
 .display-8{
   margin-top: 100px;
   text-align: center;
 
+
+
 }
+
+h1.display-8{
+  font-size: 2.6rem !important;
+}
+
+#daniel{
+  color: #28C00C !important;
+  }
 
 
 
@@ -131,11 +157,21 @@ img#headshot{
   max-width: 100%;
   min-width: 100%;
   margin-top: 25px;
+  box-shadow: 3px 3px 5px black;
 }
+.card:hover{
+  transform: scale(1.1);
+  transition: all .5s;
+
+  box-shadow: 1px 1px 5px black;
+}
+
 
 .card-body{
   background-color: grey;
   color: white;
+
+
 }
 
 .card-img-top{
@@ -158,7 +194,7 @@ button.btn.btn-primary{
   padding-left: 15px;
   padding-right: 15px;
   width: 100%;
-  background-color: #1E2022;
+  background-color: inherit;
   /* color: #28C00C; */
   color: white;
 }
@@ -233,3 +269,29 @@ button.btn.btn-primary{
   display: block;
   position: inherit;
 } */
+@media (max-width: 992px) {
+
+  .navigation-bar-items{
+    display: none;
+
+  }
+}
+  @media (min-width: 993px) {
+    span.hamburger-box{
+      display: none;
+
+    }
+    body{
+      background-color: black;
+    }
+    .navigation-bar-items li{
+      display: inline-block;
+      margin: 0 0 0 40px;
+    }
+
+}
+
+
+
+
+}
